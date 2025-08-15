@@ -1,12 +1,23 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BLogic.MassTransit.Interfaces;
+using Microsoft.AspNetCore.Mvc;
+using TestProjectApi.Commands;
+using ILogger = Serilog.ILogger;
 
 namespace TestProjectApi.Controllers;
 
-public class LoggerController : Controller
+[ApiController]
+[Route("api/[controller]")]
+public class LoggerController(ILogger logger, IEventPublisher publisher) : ControllerBase
 {
-    // GET
-    public IActionResult Index()
+    private readonly IEventPublisher publisher = publisher;
+    [HttpPost]
+    public async Task<IActionResult> PublishAsync()
     {
-        return View();
+        await publisher.PublishAsync(new OrderCreatedCommand
+        {
+            OrderId = Guid.NewGuid(),
+            CreatedAt = DateTime.UtcNow
+        });
+        return Ok();
     }
 }

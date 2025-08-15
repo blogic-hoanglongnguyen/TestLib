@@ -1,6 +1,7 @@
 ﻿namespace TestProjectApi.Commands;
 
-public class OrderCreatedCommand
+public record OrderCreatedCommand
 {
-    
+    public Guid OrderId { get; init; }
+    public DateTime CreatedAt { get; init; }
 }

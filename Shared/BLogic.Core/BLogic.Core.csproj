@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>BLogicCodeBase</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Asp.Versioning.Http" />
+      <PackageReference Include="Dapper.Contrib" />
+      <PackageReference Include="Microsoft.Data.SqlClient" />
+      <PackageReference Include="MiniProfiler.Integrations" />
+      <PackageReference Include="MiniProfiler.Shared" />
+      <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\BLogic.Helper\BLogic.Helper.csproj" />
+    </ItemGroup>
+
+</Project>

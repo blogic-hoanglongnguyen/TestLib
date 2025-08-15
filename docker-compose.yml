@@ -1,0 +1,20 @@
+version: '3.9'
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    ports:
+      # AMQP
+      - "5673:5672"    # TCP (non-SSL)
+      - "5671:5671"    # TCP (SSL)
+      # Management UI
+      - "15673:15672"  # HTTP
+      - "15671:15671"  # HTTPS/SSL
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    volumes:
+      - ./rabbitmq.conf:/etc/rabbitmq/rabbitmq.conf
+      - rabbitmq_data:/var/lib/rabbitmq
+volumes:
+  rabbitmq_data:

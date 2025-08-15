@@ -1,0 +1,73 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Versioning -->
+    <PackageVersion Include="Asp.Versioning.Http" Version="8.1.0" />
+    <PackageVersion Include="Asp.Versioning.Mvc" Version="8.1.0" />
+    <PackageVersion Include="Asp.Versioning.Mvc.ApiExplorer" Version="8.1.0" />
+    <PackageVersion Include="Autofac" Version="8.3.0" />
+    <PackageVersion Include="Autofac.Extensions.DependencyInjection" Version="10.0.0" />
+    <!-- FluentMigrator -->
+    <PackageVersion Include="FluentMigrator" Version="7.0.0" />
+    <PackageVersion Include="FluentMigrator.Runner" Version="7.0.0" />
+    <PackageVersion Include="FluentMigrator.Runner.SqlServer" Version="7.0.0" />
+    <PackageVersion Include="MailKit" Version="4.12.1" />
+    <PackageVersion Include="MassTransit" Version="8.5.2" />
+    <PackageVersion Include="MassTransit.RabbitMQ" Version="8.5.2" />
+    <!-- Microsoft -->
+    <PackageVersion Include="Microsoft.Data.SqlClient" Version="6.0.1" />
+    <PackageVersion Include="Microsoft.AspNetCore" Version="2.3.0" />
+    <PackageVersion Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.7" />
+    <PackageVersion Include="Microsoft.Extensions.Caching.Memory" Version="9.0.8" />
+    <PackageVersion Include="Microsoft.Extensions.Configuration.Binder" Version="9.0.8" />
+    <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="9.0.8" />
+    <PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.8" />
+    <PackageVersion Include="Microsoft.Extensions.Hosting" Version="3.1.1" />
+    <PackageVersion Include="Microsoft.Extensions.Http" Version="6.0.0-rc.1.21451.13" />
+    <PackageVersion Include="Microsoft.AspNetCore.SignalR" Version="1.2.0" />
+    <PackageVersion Include="Microsoft.AspNetCore.Mvc" Version="2.3.0" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.7" />
+    <PackageVersion Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.5" />
+    <!-- Dapper -->
+    <PackageVersion Include="Dapper.Contrib" Version="2.0.78" />
+    <PackageVersion Include="Dapper" Version="2.1.66" />
+    <PackageVersion Include="Dapper.Extensions.MiniProfiler" Version="5.2.0" />
+    <!-- Mapster -->
+    <PackageVersion Include="Mapster" Version="7.4.0" />
+    <PackageVersion Include="Mapster.DependencyInjection" Version="1.0.1" />
+    <PackageVersion Include="Microsoft.Extensions.Options" Version="9.0.8" />
+    <PackageVersion Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="9.0.8" />
+    <PackageVersion Include="MimeKit" Version="4.12.0" />
+    <PackageVersion Include="MiniProfiler.Shared" Version="4.3.8" />
+    <PackageVersion Include="Quartz" Version="3.15.0" />
+    <PackageVersion Include="Quartz.AspNetCore" Version="3.14.0" />
+    <PackageVersion Include="Quartz.Extensions.DependencyInjection" Version="3.14.0" />
+    <PackageVersion Include="Quartz.Extensions.Hosting" Version="3.14.0" />
+    <PackageVersion Include="RazorLight" Version="2.3.1" />
+    <!-- Serilog -->
+    <PackageVersion Include="Serilog" Version="4.3.0" />
+    <PackageVersion Include="Serilog.Enrichers.Environment" Version="3.0.1" />
+    <PackageVersion Include="Serilog.Enrichers.Thread" Version="4.0.0" />
+    <PackageVersion Include="Serilog.Exceptions" Version="8.4.0" />
+    <PackageVersion Include="Serilog.Extensions.Logging" Version="9.0.1" />
+    <PackageVersion Include="Serilog.Settings.Configuration" Version="9.0.0" />
+    <PackageVersion Include="Serilog.Sinks.Console" Version="6.0.0" />
+    <PackageVersion Include="Serilog.Sinks.File" Version="6.0.0" />
+    <PackageVersion Include="Serilog.Sinks.Seq" Version="9.0.0" />
+    <PackageVersion Include="Serilog.AspNetCore" Version="9.0.0" />
+    <PackageVersion Include="Serilog.AspNetCore.Seq" Version="8.0.1" />
+    <PackageVersion Include="Serilog.AspNetCore.Console" Version="8.0.1" />
+    <PackageVersion Include="Infrastructure.Repository" Version="1.0.13" />
+    <PackageVersion Include="Serilog.Enrichers.Process" Version="3.0.0" />
+    <PackageVersion Include="Serilog.Sinks.Elasticsearch" Version="10.0.0" />
+    <PackageVersion Include="MiniProfiler.Integrations" Version="2.5.1" />
+    <PackageVersion Include="Blogic.Dapper.Bulk" Version="2.3.0" />
+    <PackageVersion Include="Swashbuckle.AspNetCore" Version="6.1.4" />
+    <PackageVersion Include="Swashbuckle.AspNetCore.Swagger" Version="9.0.3" />
+    <PackageVersion Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.1.4" />
+    <PackageVersion Include="Swashbuckle.AspNetCore.SwaggerUI" Version="9.0.3" />
+    <PackageVersion Include="Xabe.FFmpeg" Version="6.0.1" />
+  </ItemGroup>
+</Project>
